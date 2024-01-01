@@ -5,9 +5,34 @@ def strength_guide():
 
     print("Welcome to the Strength Guide!\n")
 
+    # Gender input validation "m" or "f"
     gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
-    weight = int(input("Enter your weight in kg: \n"))
-    age = int(input("Enter your age: \n"))
+    while gender not in ['m', 'f']:
+        print("Invalid input. Enter your gender ('m' or 'f'): \n")
+        gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
+
+    # Weight input validation between 50 and 140
+    while True:
+        try:
+            weight = int(input("Enter your weight in kg (50 - 140): \n"))
+            if 50 <= weight <= 140:
+                break
+            else:
+                print("Invalid input. Enter a value between 50 and 140.\n")
+        except ValueError:
+            print("Invalid input. Enter a valid integer for weight.\n")
+
+
+    # Age input validation between 15 and 90
+    while True:
+        try:
+            age = int(input("Enter your age (15 - 90): \n"))
+            if 15 <= age <= 90:
+                break
+            else:
+                print("Invalid input. Enter a value between 15 and 90.\n")
+        except ValueError:
+            print("Invalid input. Enter a valid integer for age.\n")
 
 
 
