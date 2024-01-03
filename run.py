@@ -35,36 +35,57 @@ def bmi_calculator():
     Calculate the BMI of the user with their gender, weight, height and age.
     [weight (kg) / height (cm) / height (cm)] x 10000
     """
-
-    print("Welcome to the BMI Calculator!\n")
-
-    # Weight input validation between 50 and 140
     while True:
-        try:
-            weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
-            if 50 <= weight <= 140:
-                break
-            else:
-                print("Invalid input. Enter a value between 50 and 140.\n")
-        except ValueError:
-            print("Invalid input. Enter a valid integer for weight.\n")
+        print("Welcome to the BMI Calculator!\n")
 
-    # Height input validation between 150 and 200
-    while True:
-        try:
-            height = int(input("Enter your height in cm (150 - 200): \n").strip())
-            if 150 <= height <= 200:
-                break
-            else:
-                print("Invalid input. Enter a value between 150 and 200.\n")
-        except ValueError:
-                print("Invalid input. Enter a valid integer for height.\n")
-    
-    # Calculate the BMI
-    bmi = calculate_bmi(weight, height)
+        # Weight input validation between 50 and 140
+        while True:
+            try:
+                weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
+                if 50 <= weight <= 140:
+                    break
+                else:
+                    print("Invalid input. Enter a value between 50 and 140.\n")
+            except ValueError:
+                print("Invalid input. Enter a valid integer for weight.\n")
 
-    # Give user their BMI calculation
-    print(f"Your BMI is: {bmi: .2f}")
+        # Height input validation between 150 and 200
+        while True:
+            try:
+                height = int(input("Enter your height in cm (150 - 200): \n").strip())
+                if 150 <= height <= 200:
+                    break
+                else:
+                    print("Invalid input. Enter a value between 150 and 200.\n")
+            except ValueError:
+                    print("Invalid input. Enter a valid integer for height.\n")
+        
+        # Calculate the BMI
+        bmi = calculate_bmi(weight, height)
+
+        # Give user their BMI calculation
+        print(f"Your BMI is: {bmi: .2f}")
+
+        # Ask the user if they want to make another calculation, use the strength guide, or exit
+        user_choice = input("Do you want to:\n"
+                        "1. Make another BMI calculation\n"
+                        "2. Use the Strength Guide\n"
+                        "3. Exit\n"
+                        "Enter the number corresponding to your choice: ")
+
+        if user_choice == '1':
+            # Continue with another BMI calculation
+            continue
+        elif user_choice == '2':
+            # Use the Strength Guide
+            strength_guide()
+            break  # Exit the loop after using the strength guide
+        elif user_choice == '3':
+            # Exit the program
+            print("Exiting the BMI Calculator. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter '1', '2', or '3'.\n")
 
 def calculate_bmi(weight_kg, height_cm):
     """
