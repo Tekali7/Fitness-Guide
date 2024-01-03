@@ -38,13 +38,6 @@ def bmi_calculator():
 
     print("Welcome to the BMI Calculator!\n")
 
-    # Gender input validation "m" or "f"
-    gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
-
-    while gender not in ['m', 'f']:
-        print("Invalid input. Enter your gender ('m' or 'f'): \n")
-        gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
-
     # Weight input validation between 50 and 140
     while True:
         try:
