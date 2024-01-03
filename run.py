@@ -66,6 +66,18 @@ def bmi_calculator():
                 print("Invalid input. Enter a value between 150 and 200.\n")
         except ValueError:
                 print("Invalid input. Enter a valid integer for height.\n")
+    
+    # Calculate the BMI
+    bmi = calculate_bmi(weight, height)
+
+    # Give user their BMI calculation
+    print(f"Your BMI is: {bmi: .2f}")
+
+def calculate_bmi(weight_kg, height_cm):
+    """
+    ADD DOCSTRING HEREEE
+    """
+    return (weight_kg / height_cm ** 2) * 10000
 
 def main():
     """
