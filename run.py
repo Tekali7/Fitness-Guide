@@ -30,6 +30,75 @@ def strength_guide():
         print("Invalid input. Enter an exercise ('bench', 'squat' or 'deadlift'): \n")
         exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
 
+def get_exercise_mapping(gender, weight):
+    """
+    Arguments: 
+        gender: str - One of 'm' or 'f'.
+        weight: int - Weight in kg. Must be between 50 and 140.
+
+    Returns:
+        dict of str -> int
+    """
+
+    exercise_mapping = {
+        "m": {
+            "light": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            },
+            "middle": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            },
+            "heavy": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            }
+        },
+        "f": {
+            "light": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            },
+            "middle": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            },
+            "heavy": {
+                "squat": 100,
+                "bench": 100,
+                "deadlift": 100
+            }
+        }
+    }
+
+    if gender == "m":
+        if weight >= 50 and weight <= 80:
+            return exercise_mapping["m"]["light"]
+        
+        elif weight > 80 and weight <= 120:
+            return exercise_mapping["m"]["middle"]
+        
+        else: 
+            weight > 120 and weight <= 140
+            return exercise_mapping["m"]["heavy"]
+    
+    if gender == "f":
+        if weight >= 50 and weight <= 100:
+            return exercise_mapping["f"]["light"]
+        
+        elif weight > 100 and weight <= 120:
+            return exercise_mapping["f"]["middle"]
+        
+        else: 
+            weight > 120 and weight <= 140
+            return exercise_mapping["f"]["heavy"]
+
 def bmi_calculator():
     """
     Calculate the BMI of the user with their gender, weight, height and age.
