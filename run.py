@@ -2,44 +2,65 @@ def strength_guide():
     """
     Show the average strength of other lifters of the same gender, weight and age.
     """
+    while True:
+        print("Welcome to the Strength Guide!\n")
 
-    print("Welcome to the Strength Guide!\n")
-
-    # Gender input validation "m" or "f"
-    gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
-
-    while gender not in ['m', 'f']:
-        print("Invalid input. Enter your gender ('m' or 'f'): \n")
+        # Gender input validation "m" or "f"
         gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
 
-    # Weight input validation between 50 and 140
-    while True:
-        try:
-            weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
-            if 50 <= weight <= 140:
-                break
-            else:
-                print("Invalid input. Enter a value between 50 and 140.\n")
-        except ValueError:
-            print("Invalid input. Enter a valid integer for weight.\n")
+        while gender not in ['m', 'f']:
+            print("Invalid input. Enter your gender ('m' or 'f'): \n")
+            gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
 
-    # Exercise input validation "squat", "bench" or "deadlift"
-    exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
-    
-    while exercise not in ["bench", "squat", "deadlift"]:
-        print("Invalid input. Enter an exercise ('bench', 'squat' or 'deadlift'): \n")
+        # Weight input validation between 50 and 140
+        while True:
+            try:
+                weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
+                if 50 <= weight <= 140:
+                    break
+                else:
+                    print("Invalid input. Enter a value between 50 and 140.\n")
+            except ValueError:
+                print("Invalid input. Enter a valid integer for weight.\n")
+
+        # Exercise input validation "squat", "bench" or "deadlift"
         exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
+        
+        while exercise not in ["bench", "squat", "deadlift"]:
+            print("Invalid input. Enter an exercise ('bench', 'squat' or 'deadlift'): \n")
+            exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
 
-    exercise_mapping = get_exercise_mapping(gender, weight)
-    
-    print(f"\nAverage strength reference for a {gender} lifter with {weight}kg bodyweight for {exercise}:\n")
+        exercise_mapping = get_exercise_mapping(gender, weight)
+        
+        print(f"\nAverage strength reference for a {gender} lifter with {weight}kg bodyweight for {exercise}:\n")
 
-    if weight >= 50 and weight <= 80:
-        print(f"Light: {exercise_mapping[exercise]} kg for {exercise}")
-    elif weight > 80 and weight <= 120:
-        print(f"Middle: {exercise_mapping[exercise]} kg for {exercise}")
-    else: 
-        print(f"Heavy: {exercise_mapping[exercise]} kg for {exercise}")
+        if weight >= 50 and weight <= 80:
+            print(f"Light: {exercise_mapping[exercise]} kg for {exercise}\n")
+        elif weight > 80 and weight <= 120:
+            print(f"Middle: {exercise_mapping[exercise]} kg for {exercise}\n")
+        else: 
+            print(f"Heavy: {exercise_mapping[exercise]} kg for {exercise}\n")
+
+    # Ask the user if they want to get another strength reference, use the bmi calculator, or exit
+        user_choice = input("Do you want to:\n"
+                        "1. Get another Strength Reference\n"
+                        "2. Use the BMI Calculator\n"
+                        "3. Exit\n"
+                        "Enter the number corresponding to your choice: ")
+
+        if user_choice == '1':
+            # Continue with another strength reference
+            continue
+        elif user_choice == '2':
+            # Use the BMI Calculator
+            bmi_calculator()
+            break  # Exit the loop after using the bmi calculator
+        elif user_choice == '3':
+            # Exit the program
+            print("Exiting the Strength Guide...\nGoodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter '1', '2', or '3'.\n")
 
 def get_exercise_mapping(gender, weight):
     """
@@ -162,7 +183,7 @@ def bmi_calculator():
             break  # Exit the loop after using the strength guide
         elif user_choice == '3':
             # Exit the program
-            print("Exiting the BMI Calculator. Goodbye!")
+            print("Exiting the BMI Calculator...\nGoodbye!")
             break
         else:
             print("Invalid choice. Please enter '1', '2', or '3'.\n")
