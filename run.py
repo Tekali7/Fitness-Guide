@@ -6,15 +6,16 @@ def strength_guide():
     print("Welcome to the Strength Guide!\n")
 
     # Gender input validation "m" or "f"
-    gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
+    gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
+    
     while gender not in ['m', 'f']:
         print("Invalid input. Enter your gender ('m' or 'f'): \n")
-        gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
+        gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
 
     # Weight input validation between 50 and 140
     while True:
         try:
-            weight = int(input("Enter your weight in kg (50 - 140): \n"))
+            weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
             if 50 <= weight <= 140:
                 break
             else:
@@ -31,15 +32,16 @@ def bmi_calculator():
     print("Welcome to the BMI Calculator!\n")
 
     # Gender input validation "m" or "f"
-    gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
+    gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
+
     while gender not in ['m', 'f']:
         print("Invalid input. Enter your gender ('m' or 'f'): \n")
-        gender = str(input("Enter your gender ('m' or 'f'): \n")).lower()
+        gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
 
     # Weight input validation between 50 and 140
     while True:
         try:
-            weight = int(input("Enter your weight in kg (50 - 140): \n"))
+            weight = int(input("Enter your weight in kg (50 - 140): \n").strip())
             if 50 <= weight <= 140:
                 break
             else:
@@ -50,7 +52,7 @@ def bmi_calculator():
     # Height input validation between 150 and 200
     while True:
         try:
-            height = int(input("Enter your height in cm (150 - 200): \n"))
+            height = int(input("Enter your height in cm (150 - 200): \n").strip())
             if 150 <= height <= 200:
                 break
             else:
@@ -65,7 +67,7 @@ def main():
     print("Welcome to the Fitness Guide!\n")
 
     while True:
-        user_selection = input("Do you want to use the Strength Guide or the BMI Calculator? (Type 'strength' or 'bmi'): \n").lower()
+        user_selection = input("Do you want to use the Strength Guide or the BMI Calculator? (Type 'strength' or 'bmi'): \n").lower().strip()
 
         if user_selection == "strength":
             strength_guide()
