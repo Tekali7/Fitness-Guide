@@ -22,20 +22,6 @@ def strength_guide():
         except ValueError:
             print("Invalid input. Enter a valid integer for weight.\n")
 
-
-    # Age input validation between 15 and 90
-    while True:
-        try:
-            age = int(input("Enter your age (15 - 90): \n"))
-            if 15 <= age <= 90:
-                break
-            else:
-                print("Invalid input. Enter a value between 15 and 90.\n")
-        except ValueError:
-            print("Invalid input. Enter a valid integer for age.\n")
-
-
-
 def bmi_calculator():
     """
     Calculate the BMI of the user with their gender, weight, height and age.
@@ -71,17 +57,6 @@ def bmi_calculator():
                 print("Invalid input. Enter a value between 150 and 200.\n")
         except ValueError:
                 print("Invalid input. Enter a valid integer for height.\n")
-
-    # Age input validation between 15 and 90
-    while True:
-        try:
-            age = int(input("Enter your age (15 - 90): \n"))
-            if 15 <= age <= 90:
-                break
-            else:
-                print("Invalid input. Enter a value between 15 and 90.\n")
-        except ValueError:
-            print("Invalid input. Enter a valid integer for age.\n")
 
 def main():
     """
