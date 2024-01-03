@@ -30,6 +30,17 @@ def strength_guide():
         print("Invalid input. Enter an exercise ('bench', 'squat' or 'deadlift'): \n")
         exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
 
+    exercise_mapping = get_exercise_mapping(gender, weight)
+    
+    print(f"\nAverage strength reference for a {gender} lifter with {weight}kg bodyweight for {exercise}:\n")
+
+    if weight >= 50 and weight <= 80:
+        print(f"Light: {exercise_mapping[exercise]} kg for {exercise}")
+    elif weight > 80 and weight <= 120:
+        print(f"Middle: {exercise_mapping[exercise]} kg for {exercise}")
+    else: 
+        print(f"Heavy: {exercise_mapping[exercise]} kg for {exercise}")
+
 def get_exercise_mapping(gender, weight):
     """
     Arguments: 
