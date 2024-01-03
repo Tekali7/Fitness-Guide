@@ -7,7 +7,7 @@ def strength_guide():
 
     # Gender input validation "m" or "f"
     gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
-    
+
     while gender not in ['m', 'f']:
         print("Invalid input. Enter your gender ('m' or 'f'): \n")
         gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
@@ -22,6 +22,13 @@ def strength_guide():
                 print("Invalid input. Enter a value between 50 and 140.\n")
         except ValueError:
             print("Invalid input. Enter a valid integer for weight.\n")
+
+    # Exercise input validation "squat", "bench" or "deadlift"
+    exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
+    
+    while exercise not in ["bench", "squat", "deadlift"]:
+        print("Invalid input. Enter an exercise ('bench', 'squat' or 'deadlift'): \n")
+        exercise = input("Choose an exercise ('squat', 'bench' or 'deadlift'): \n").lower().strip()
 
 def bmi_calculator():
     """
