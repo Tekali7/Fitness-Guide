@@ -125,9 +125,10 @@ Future implementations for this app are.
 
 - IDE: [Visual Studio Code](<https://code.visualstudio.com/>)
 - Version Control: [Git](<https://gitforwindows.org/>)
-- Repository: [GitHub](<>)
+- Repository: [GitHub](<https://github.com/>)
 - Validator: [](<>)
 - Wireframe: [LucidChart](<>)
+- Heroku: [Heroku](<https://heroku.com/>)
 
 # Wireframe
 

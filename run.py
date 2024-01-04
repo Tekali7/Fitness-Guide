@@ -15,7 +15,7 @@ def strength_guide():
     while True:
         print("Welcome to the Strength Guide!\n")
 
-        # Gender input validation "m" or "f"
+        # Gender input validation "male" or "female"
         gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
 
         while gender not in ['m', 'f']:
@@ -136,7 +136,7 @@ def get_exercise_mapping(gender, weight):
             weight > 120 and weight <= 140
             return exercise_mapping["m"]["heavy"]
 
-    if gender == "f":
+    elif gender == "f":
         if weight >= 50 and weight <= 100:
             return exercise_mapping["f"]["light"]
 
