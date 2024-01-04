@@ -6,7 +6,7 @@ Deployed link to the project: https://fitness-guide-pp3-15a6dec5a52f.herokuapp.c
 
 # Purpose of this project
 
-The Fitness Guide is a command-line interface program, with two main features from which the user can choose from. A strength reference for 3 different exercises, or a BMI Calculator. After the user inputs the relevant information like gender, weight and height, the app displays/ calculates the requested information. The user can then choose to continue using the selected feature, change to the other feature or to exit the app.
+The Fitness Guide is a command-line interface program, with two main features from which the user can choose from. A strength reference for 3 different exercises, or a BMI Calculator. After the user inputs the relevant information like gender, weight and height, the app displays/calculates the requested information. The user can then choose to continue using the selected feature, change to the other feature or to exit the app.
 
 # Table of contents:
 
@@ -27,7 +27,7 @@ The Fitness Guide is a command-line interface program, with two main features fr
     * [Future implementations](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#future-implementations)
 
 * [Technology](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#technology)
-    * [Languages](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#languages)
+    * [Language](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#languages)
     * [Frameworks, Libraries and Programs](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#frameworks-libraries-and-programs)
 
  * [Wireframe](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#wireframe)
@@ -117,7 +117,7 @@ Future implementations for this app are.
 
 # Technology
 
-## Languages
+## Language
 
 - Python 3.12
 
@@ -128,7 +128,7 @@ Future implementations for this app are.
 - Repository: [GitHub](<https://github.com/>)
 - Validator: [CI Python Linter](<https://pep8ci.herokuapp.com/#>)
 - Wireframe: [LucidChart](<https://www.lucidchart.com/pages/de>)
-- Heroku: [Heroku](<https://heroku.com/>)
+- Deployment: [Heroku](<https://heroku.com/>)
 
 # Wireframe
 
@@ -141,7 +141,7 @@ Future implementations for this app are.
 ## Validator Testing
 
 The [CI Python Linter/Validator](<https://pep8ci.herokuapp.com/#>) was used to validate the project.
-The validation results are displayed with a snippet of the code to indicate their association with the respective page.
+The validation result is displayed with a snippet of the code to indicate their association with the project.
 ![Validation](assets/python-validator.PNG)
 
 ## Manual Testing
