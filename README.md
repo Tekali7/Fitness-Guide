@@ -40,15 +40,15 @@ The Fitness Guide is a command-line interface program, with two main features fr
         * [Browser Compatibility]()
     * [Fixed Bugs]()
 
-* [Deployment](https://github.com/Tekali7/JumpJourney#deployment)
-    * [How to Deploy](https://github.com/Tekali7/JumpJourney#how-to-deploy)
-    * [How to Fork](https://github.com/Tekali7/JumpJourney#how-to-fork)
-    * [How to Clone](https://github.com/Tekali7/JumpJourney#how-to-clone)
+* [Deployment]()
+    * [How to Deploy with Heroku]()
+    * [How to Fork]()
+    * [How to Clone]()
 
-* [Credits](https://github.com/Tekali7/JumpJourney#credits)
-    * [Code](https://github.com/Tekali7/JumpJourney#code)
+* [Credits]()
+    * [Code]()
 
-* [Acknowledgments](https://github.com/Tekali7/JumpJourney#acknowledgments)
+* [Acknowledgments]()
 
 # User Demographic
 
@@ -127,22 +127,15 @@ Future implementations for this website are.
 
 ## Languages
 
-- HTML5
-- CSS3
-- JavaScript
+- Python 3.12
 
 ## Frameworks, Libraries and Programs
 
 - IDE: [Visual Studio Code](<https://code.visualstudio.com/>)
 - Version Control: [Git](<https://gitforwindows.org/>)
-- Repository: [GitHub](<https://github.com/Tekali7/JumpJourney>)
-- Image converter: [Convertio](<https://convertio.co/de/jpg-webp/>)
-- Image compression: [Tinypng](<https://tinypng.com/>)
-- Favicon generator: [Favicon](<https://favicon.io/>)
-- Wireframe: [Balsamiq](<https://balsamiq.com/>)
-- Alert: [SweetAlert2](https://sweetalert2.github.io/)
-
-
+- Repository: [GitHub](<>)
+- Validator: [](<>)
+- Wireframe: [LucidChart](<>)
 
 # Wireframe
 
@@ -153,7 +146,7 @@ Future implementations for this website are.
 
 ## Validator Testing
 
-The [W3C Markup Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) were used to validate the project.
+The [ Validator]() was used to validate the project.
 The validation results are displayed with a snippet of the code to indicate their association with the respective page.
 
 ## Manual Testing
@@ -227,17 +220,21 @@ Testing has been carried out on the following browsers:
 
 # Deployment
 
-## How to Deploy
+## How to Deploy with Heroku
 
-Website deployment is the process of making a website live and accessible on the internet for people to visit.
+App deployment is the process of making a program live and accessible on the internet for people to visit.
 
-1. Log into GitHub.
-2. Locate repository (left-side or top-right icon and then on "Your repositories").
-3. Select repository and navigate to "Settings" on the horizontal bar.
-4. Open the "Pages" menu and select "main" for the branch.
-5. The page will refresh with a link to the deployed website.
-6. It may not go live for a few minutes, refresh the page to update the link.
-7. Once deployed, the live website will automatically update when any changes are pushed to the main branch.
+1. Log in to Heroku.
+2. Click "Create new app".
+3. Choose app name and select a region.
+4. Click "Create app".
+5. Navigate to the "Settings" tab.
+6. Click "Reveal Config Vars".
+7. Add Config Var in Heroku's Settings. The key is PORT and the value is 8000.
+8. Scroll down to "Buildpacks".
+9. Click "Add Buildpack".
+10. First add "Python", click save.
+11. Second add "Nodejs", click save.
 
 ## How to Fork
 

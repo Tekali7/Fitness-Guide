@@ -190,6 +190,10 @@ def bmi_calculator():
 
         # Give user their BMI calculation
         print(f"\nYour BMI is: {bmi: .2f}\n")
+        print("Below 18.5 is in the underweight range.")
+        print("Between 18.5 and 24.9 is in the healthy weight range.")
+        print("Between 25 and 29.9 is in the overweight range")
+        print("30 or over is in the obese range.\n")
 
         # Ask the user if they want to make another calculation, use the strength guide, or exit
         user_choice = input("Do you want to:\n"
