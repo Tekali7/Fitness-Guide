@@ -10,43 +10,43 @@ The Fitness Guide is a command-line interface program, with two main features fr
 
 # Table of contents:
 
-* [User Demographic]()
+* [User Demographic](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#user-demographic)
 
-* [User Experience]()
-    * [User stories]()
-        * [User Goals]()
+* [User Experience](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#user-experience)
+    * [User stories](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#user-stories)
+        * [User Goals](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#user-goals)
 
-* [Features]()
-    * [Welcome screen]()
-    * [Feature selection]()
-    * [Strength Guide]()
-    * [BMI Calculator]()
-    * [Looping Functionality]()
-    * [Reusability]()
-    * [Input Validation]()
-    * [Future implementations]()
+* [Features](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#features)
+    * [Welcome screen](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#welcome-screen)
+    * [Feature selection](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#feature-selection)
+    * [Strength Guide](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#strength-guide)
+    * [BMI Calculator](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#bmi-calculator)
+    * [Looping Functionality](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#looping-functionality)
+    * [Reusability](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#reusability)
+    * [Input Validation](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#input-validation)
+    * [Future implementations](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#future-implementations)
 
-* [Technology]()
-    * [Languages]()
-    * [Frameworks, Libraries and Programs]()
+* [Technology](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#technology)
+    * [Languages](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#languages)
+    * [Frameworks, Libraries and Programs](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#frameworks-libraries-and-programs)
 
- * [Wireframe]()
+ * [Wireframe](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#wireframe)
 
-* [Testing]()
-    * [Validator Testing]()
-    * [Manual Testing]()
-        * [Features Testing]()
-    * [Fixed Bugs]()
+* [Testing](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#testing)
+    * [Validator Testing](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#validator-testing)
+    * [Manual Testing](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#manual-testing)
+        * [Features Testing](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#features-testing)
+    * [Fixed Bugs](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#fixed-bugs)
 
-* [Deployment]()
-    * [How to Deploy with Heroku]()
-    * [How to Fork]()
-    * [How to Clone]()
+* [Deployment](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#deployment)
+    * [How to Deploy with Heroku](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#how-to-deploy-with-heroku)
+    * [How to Fork](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#how-to-fork)
+    * [How to Clone](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#how-to-clone)
 
-* [Credits]()
-    * [Code]()
+* [Credits](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#credits)
+    * [Code](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#code)
 
-* [Acknowledgments]()
+* [Acknowledgments](https://github.com/Tekali7/Fitness-Guide/tree/main?tab=readme-ov-file#acknowledgments)
 
 # User Demographic
 
