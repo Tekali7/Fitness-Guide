@@ -59,17 +59,17 @@ Fitness enthusiasts, Health-conscious individuals, people monitoring their weigh
 
 ## User stories
 
-### Visitor goals
+### User goals
 
-- As a visitor, I want to easily calculate my BMI.
+- As a user, I want to easily calculate my BMI.
 
-- As a visitor, I want to quickly see and understand the different ranges of the BMI.
+- As a user, I want to quickly see and understand the different ranges of the BMI.
 
-- As a visitor, I want to get a strength reference tailored to me.
+- As a user, I want to get a strength reference tailored to me.
 
-- As a visitor, I want to get strength references for different exercises compared to the average lifter.
+- As a user, I want to get strength references for different exercises compared to the average lifter.
 
-- As a visitor, I want to easily switch between the Strength Guide and the BMI Calculator for comfortable navigation/use.
+- As a user, I want to easily switch between the Strength Guide and the BMI Calculator for comfortable navigation/use.
 
 # Features
 
@@ -77,52 +77,40 @@ The app consists of one terminal with numerous features which offer the user a p
 
 ## Welcome screen
 
-The title of the game is a link that leads back to the start of the page. When clicked, the user can restart the game and refresh their memory of the instructions.
-![Header](assets/readme-imgs/header.PNG)
+Upon running the app, users are greeted with a welcome message to the Fitness Guide.
+![Welcome screen](assets/welcome-screen.PNG)
 
-## User-Friendly Interface
+## Feature selection
 
-The interface of the website is very user-friendly and is designed to provide easy navigation and gameplay. For example: The user can click anywhere on the screen to let the player jump.
-![User-Interface](assets/readme-imgs/user-interface.PNG)
+Users are prompted to choose between the Strength Guide and the BMI Calculator. Input validation ensures that only valid options ('strength' or 'bmi') are accepted.
+![Selection](assets/selection.PNG)
 
-## Sound effects
+## Strength Guide
 
-The game provides the player with acoustic feedback when jumping or colliding with the obstacle. This additional feedback increases the experience of the user on the website, as it increases the immersion of the game.
-![Sounds](assets/readme-imgs/sounds.PNG)
+When the user selects the Strength Guide, they are prompted to enter their gender, bodyweight, and choose an exercise (bench, squat, or deadlift). Input validation is implemented for gender, weight, and exercise selection. The app provides average strength references tailored to the users gender, weight, and chosen exercise. The strength references are just an example and shouldn't be taken seriously, as they are just to show the function of the feature. After viewing the strength reference, users have the option to get another strength reference, use the BMI Calculator, or exit.
+![Strength Guide](assets/strength-guide.PNG)
 
-## Score Counter
+## BMI Calculator
 
-The score counter captures the current score that the user managed to play. This encourages the user to replay the game to try and break their recent high-score.
-<br>
-![Score counter](assets/readme-imgs/score-counter.PNG)
+When the user selects the BMI Calculator, they are prompted to enter their bodyweight, and height. Input validation is implemented for bodyweight, and height. The app then calculates and displays the users BMI. After viewing the BMI, users have the option to make another BMI calculation, use the Strength Guide, or exit.<br>
+![BMI Calculator](assets/bmi-calculator.PNG)
 
-## Game over SweetAlert
+## Looping Functionality
 
-The game over SweetAlert function tells the user that the gaming session has ended. Informing them that they collided with the obstacle, thus ending the game. It displays the highest score that the user reached, as well as a "Try Again" button which gives the user the choice to refresh and replay the game.
-![Game over alert](assets/readme-imgs/game-over-modal.PNG)
+The program is designed to loop, allowing users to make multiple calculations, get multiple strength references or to switch between the Strength Guide and the BMI Calculator without having to restart the app. 
+![Looping](assets/looping.PNG)
 
-## Instructions Modal
+## Reusability
 
-The instructions modal informs the user about the possible ways to control the player, while holding the game on pause. It displays two images with short descriptions underneath each image. The first image displays a left mouse button and the second image displays a arrow up button.
-![Instructions Modal](assets/readme-imgs/instructions-modal.PNG)
-
-## Collision Detection
-
-The game checks if the player has collided with an obstacle every 10ms. If a collision occurs the game ends and the score stops counting.
-<br>
-![Collision Detection](assets/readme-imgs/collision-detection.PNG)
+Functions like the strength_guide, bmi_calculator, and calculate_bmi are modular and can be reused, promoting code maintainability.
 
 ## Future implementations
 
-Future implementations for this website are.
+Future implementations for this app are.
 
-- A pause function to stop the game mid-run.
+- A calorie counter to calculate the daily calorie intake.
 
-- Different difficulty setting, from easy to hard.
-
-- Storage of the highest scores, similar to a Top 10 list.
-
-- Online leaderboard to let the user compare themselves to the world.
+- A calorie recommendation based on the users daily activity.
 
 # Technology
 
