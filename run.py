@@ -32,14 +32,14 @@ def strength_guide():
 
         exercise_mapping = get_exercise_mapping(gender, weight)
         
-        print(f"\nAverage strength reference for a {gender} lifter with {weight}kg bodyweight for {exercise}:\n")
+        print(f"\nAverage strength reference for a {gender} lifter with {weight}kg bodyweight:")
 
         if weight >= 50 and weight <= 80:
-            print(f"Light: {exercise_mapping[exercise]} kg for {exercise}\n")
+            print(f"{exercise_mapping[exercise]} kg for {exercise}.\n")
         elif weight > 80 and weight <= 120:
-            print(f"Middle: {exercise_mapping[exercise]} kg for {exercise}\n")
+            print(f"{exercise_mapping[exercise]} kg for {exercise}.\n")
         else: 
-            print(f"Heavy: {exercise_mapping[exercise]} kg for {exercise}\n")
+            print(f"{exercise_mapping[exercise]} kg for {exercise}.\n")
 
     # Ask the user if they want to get another strength reference, use the bmi calculator, or exit
         user_choice = input("Do you want to:\n"
