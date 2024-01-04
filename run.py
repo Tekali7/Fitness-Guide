@@ -98,36 +98,36 @@ def get_exercise_mapping(gender, weight):
     exercise_mapping = {
         "male": {
             "light": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 72,
+                "bench": 61,
+                "deadlift": 83
             },
             "middle": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 87,
+                "bench": 80,
+                "deadlift": 145
             },
             "heavy": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 110,
+                "bench": 98,
+                "deadlift": 188
             }
         },
         "female": {
             "light": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 48,
+                "bench": 32,
+                "deadlift": 49
             },
             "middle": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 62,
+                "bench": 44,
+                "deadlift": 74
             },
             "heavy": {
-                "squat": 100,
-                "bench": 100,
-                "deadlift": 100
+                "squat": 93,
+                "bench": 52,
+                "deadlift": 90
             }
         }
     }
