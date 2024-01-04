@@ -51,7 +51,7 @@ The Fitness Guide is a command-line interface program, with two main features fr
 # User Demographic
 
 The target audience for this fitness app would likely include individuals who are interested in maintaining or improving their physical health and fitness. The user demographic may include:
-Fitness enthusiasts, Health-conscious individuals, people monitoring their weight etc.
+Fitness enthusiasts, health-conscious individuals, people monitoring their weight etc.
 
 # User Experience
 
@@ -126,22 +126,23 @@ Future implementations for this app are.
 - IDE: [Visual Studio Code](<https://code.visualstudio.com/>)
 - Version Control: [Git](<https://gitforwindows.org/>)
 - Repository: [GitHub](<https://github.com/>)
-- Validator: [](<>)
-- Wireframe: [LucidChart](<>)
+- Validator: [CI Python Linter](<https://pep8ci.herokuapp.com/#>)
+- Wireframe: [LucidChart](<https://www.lucidchart.com/pages/de>)
 - Heroku: [Heroku](<https://heroku.com/>)
 
 # Wireframe
 
 - A flowchart was created before programming started to plan the intended programme flow, as per the attached flowchart.
 
-![Flowchart wireframe](assets/readme-imgs/flowchart-wireframe.PNG)
+![Flowchart wireframe](assets/flowchart-wireframe.PNG)
 
 # Testing
 
 ## Validator Testing
 
-The [ Validator]() was used to validate the project.
+The [CI Python Linter/Validator](<https://pep8ci.herokuapp.com/#>) was used to validate the project.
 The validation results are displayed with a snippet of the code to indicate their association with the respective page.
+![Validation](assets/python-validator.PNG)
 
 ## Manual Testing
 
