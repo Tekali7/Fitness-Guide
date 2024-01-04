@@ -14,16 +14,16 @@ The Fitness Guide is a command-line interface program, with two main features fr
 
 * [User Experience]()
     * [User stories]()
-        * [Visitor Goals]()
+        * [User Goals]()
 
 * [Features]()
-    * [Header/Navigation]()
-    * [User-Friendly Interface]()
-    * [Sound effects]()
-    * [Score Counter]()
-    * [Game over SweetAlert]()
-    * [Instructions Modal]()
-    * [Collision Detection]()
+    * [Welcome screen]()
+    * [Feature selection]()
+    * [Strength Guide]()
+    * [BMI Calculator]()
+    * [Looping Functionality]()
+    * [Reusability]()
+    * [Input Validation]()
     * [Future implementations]()
 
 * [Technology]()
@@ -36,8 +36,6 @@ The Fitness Guide is a command-line interface program, with two main features fr
     * [Validator Testing]()
     * [Manual Testing]()
         * [Features Testing]()
-        * [Device Testing]()
-        * [Browser Compatibility]()
     * [Fixed Bugs]()
 
 * [Deployment]()
@@ -152,7 +150,7 @@ The validation results are displayed with a snippet of the code to indicate thei
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Welcome screen | None | Welcome user  | PASS         |
+| Welcome screen | Open app | Welcome the user  | PASS         |
 
 #### Feature selection
 
