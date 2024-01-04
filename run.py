@@ -15,12 +15,12 @@ def strength_guide():
     while True:
         print("Welcome to the Strength Guide!\n")
 
-        # Gender input validation "male" or "female"
-        gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
+        # Gender input validation "m" or "f"
+        gender = input("Enter your gender ('male' or 'female'): \n").lower().strip()
 
-        while gender not in ['m', 'f']:
-            print("Invalid input. Enter your gender ('m' or 'f'): \n")
-            gender = input("Enter your gender ('m' or 'f'): \n").lower().strip()
+        while gender not in ['male', 'female']:
+            print("Invalid input. Enter your gender ('male' or 'female'): \n")
+            gender = input("Enter your gender ('male' or 'female'): \n").lower().strip()
 
         # Weight input validation between 50 and 140
         while True:
@@ -80,7 +80,7 @@ def get_exercise_mapping(gender, weight):
     based on the users gender and weight.
 
     Arguments:
-        gender: str - Users gender, either 'm' or 'f'.
+        gender: str - Users gender, either 'male' or 'female'.
         weight: int - Users weight in kg, must be between 50 and 140.
 
     Returns:
@@ -89,7 +89,7 @@ def get_exercise_mapping(gender, weight):
     """
 
     exercise_mapping = {
-        "m": {
+        "male": {
             "light": {
                 "squat": 100,
                 "bench": 100,
@@ -106,7 +106,7 @@ def get_exercise_mapping(gender, weight):
                 "deadlift": 100
             }
         },
-        "f": {
+        "female": {
             "light": {
                 "squat": 100,
                 "bench": 100,
@@ -125,27 +125,27 @@ def get_exercise_mapping(gender, weight):
         }
     }
 
-    if gender == "m":
+    if gender == "male":
         if weight >= 50 and weight <= 80:
-            return exercise_mapping["m"]["light"]
+            return exercise_mapping["male"]["light"]
 
         elif weight > 80 and weight <= 120:
-            return exercise_mapping["m"]["middle"]
+            return exercise_mapping["male"]["middle"]
 
         else:
             weight > 120 and weight <= 140
-            return exercise_mapping["m"]["heavy"]
+            return exercise_mapping["male"]["heavy"]
 
-    elif gender == "f":
+    elif gender == "female":
         if weight >= 50 and weight <= 100:
-            return exercise_mapping["f"]["light"]
+            return exercise_mapping["female"]["light"]
 
         elif weight > 100 and weight <= 120:
-            return exercise_mapping["f"]["middle"]
+            return exercise_mapping["female"]["middle"]
 
         else:
             weight > 120 and weight <= 140
-            return exercise_mapping["f"]["heavy"]
+            return exercise_mapping["female"]["heavy"]
 
 
 def bmi_calculator():
