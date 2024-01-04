@@ -147,6 +147,7 @@ def get_exercise_mapping(gender, weight):
             weight > 120 and weight <= 140
             return exercise_mapping["f"]["heavy"]
 
+
 def bmi_calculator():
     """
     Calculates the BMI of the user with their weight and height,
@@ -188,7 +189,7 @@ def bmi_calculator():
         bmi = calculate_bmi(weight, height)
 
         # Give user their BMI calculation
-        print(f"Your BMI is: {bmi: .2f}")
+        print(f"\nYour BMI is: {bmi: .2f}\n")
 
         # Ask the user if they want to make another calculation, use the strength guide, or exit
         user_choice = input("Do you want to:\n"
@@ -211,6 +212,7 @@ def bmi_calculator():
         else:
             print("Invalid choice. Please enter '1', '2', or '3'.\n")
 
+
 def calculate_bmi(weight_kg, height_cm):
     """
     Calculates the BMI based on
@@ -226,6 +228,7 @@ def calculate_bmi(weight_kg, height_cm):
         [weight (kg) / height (cm) / height (cm)] x 10000.
     """
     return (weight_kg / height_cm ** 2) * 10000
+
 
 def main():
     """
