@@ -104,6 +104,11 @@ The program is designed to loop, allowing users to make multiple calculations, g
 
 Functions like the strength_guide, bmi_calculator, and calculate_bmi are modular and can be reused, promoting code maintainability.
 
+## Input validation
+
+Robust input validation to ensure accurate user interactions, preventing errors and enhancing the overall user experience.<br>
+![Input validation](assets/input-validation.PNG)
+
 ## Future implementations
 
 Future implementations for this app are.
@@ -147,31 +152,37 @@ The validation results are displayed with a snippet of the code to indicate thei
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Header     | Click on Header Title | Open Home page   | PASS         |
+| Welcome screen | None | Welcome user  | PASS         |
 
 #### Feature selection
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Instructions modal| Close the modal | Game and score start running   | PASS         |
+| Feature selection | Input "strength" or "bmi" | Lead to respective features   | PASS         |
 
 #### Strength guide
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Score counter| Run game | Count up score  | PASS              |   
+| Strength Guide| Input required information | Output strength reference  | PASS              |   
 
 #### BMI Calculator
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Collision detection | Collide with obstacle | Game and score stop  | PASS         |
+| BMI Calculator | Input required information | Output calculated BMI  | PASS         |
 
 #### Looping functionality
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
-| Game over  | Collide with obstacle | Game over SweetAlert displays   | PASS         |
+| Looping  | Switch from one feature to the other after usage of current feature or exit app | Start of other feature or exited app  | PASS         |
+
+#### General input validation
+
+| Test Label | Test Action           | Expected Outcome | Test Outcome |
+| ---------- | --------------------- | ---------------- | ------------ |
+| General input validation| Write incorrect inputs | Repeated request to input correct information with correct input example | PASS              |   
 
 ## Fixed Bugs
 
