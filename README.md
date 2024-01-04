@@ -1,6 +1,6 @@
 # Fitness Guide
 
-![Responsitivity example](assets/readme-imgs/am-i-responsive.PNG)
+![Responsitivity example](assets/amiresponsive.PNG)
 
 Deployed link to the project: https://fitness-guide-pp3-15a6dec5a52f.herokuapp.com/
 
@@ -52,7 +52,8 @@ The Fitness Guide is a command-line interface program, with two main features fr
 
 # User Demographic
 
-The game is targeted to a broad audience. Particularly those who enjoy casual and accessible web-based games. With its easy and straightforward controls the game can be played by almost any age group. Also people that are new to gaming have it easy to start with a casual game like JumpJourney.
+The target audience for this fitness app would likely include individuals who are interested in maintaining or improving their physical health and fitness. The user demographic may include:
+Fitness enthusiasts, Health-conscious individuals, people monitoring their weight etc.
 
 # User Experience
 
@@ -60,21 +61,21 @@ The game is targeted to a broad audience. Particularly those who enjoy casual an
 
 ### Visitor goals
 
-- As a visitor, I want to easily understand the main purpose of the website.
+- As a visitor, I want to easily calculate my BMI.
 
-- As a visitor, I want to quickly understand the objective of the game.
+- As a visitor, I want to quickly see and understand the different ranges of the BMI.
 
-- As a visitor, I want to be instructed of the controls.
+- As a visitor, I want to get a strength reference tailored to me.
 
-- As a visitor, I want to be able to use more than just one button to control the player.
+- As a visitor, I want to get strength references for different exercises compared to the average lifter.
 
-- As a visitor, I want to see the highest score I managed to get.
+- As a visitor, I want to easily switch between the Strength Guide and the BMI Calculator for comfortable navigation/use.
 
 # Features
 
-The website consists of one page with numerous features which offer the user a pleasant website experience.
+The app consists of one terminal with numerous features which offer the user a pleasant user experience.
 
-## Header/Navigation
+## Welcome screen
 
 The title of the game is a link that leads back to the start of the page. When clicked, the user can restart the game and refresh their memory of the instructions.
 ![Header](assets/readme-imgs/header.PNG)
