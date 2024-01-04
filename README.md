@@ -77,17 +77,17 @@ The app consists of one terminal with numerous features which offer the user a p
 
 ## Welcome screen
 
-Upon running the app, users are greeted with a welcome message to the Fitness Guide.
+Upon running the app, users are greeted with a welcome message to the Fitness Guide.<br>
 ![Welcome screen](assets/welcome-screen.PNG)
 
 ## Feature selection
 
-Users are prompted to choose between the Strength Guide and the BMI Calculator. Input validation ensures that only valid options ('strength' or 'bmi') are accepted.
+Users are prompted to choose between the Strength Guide and the BMI Calculator. Input validation ensures that only valid options ('strength' or 'bmi') are accepted.<br>
 ![Selection](assets/selection.PNG)
 
 ## Strength Guide
 
-When the user selects the Strength Guide, they are prompted to enter their gender, bodyweight, and choose an exercise (bench, squat, or deadlift). Input validation is implemented for gender, weight, and exercise selection. The app provides average strength references tailored to the users gender, weight, and chosen exercise. The strength references are just an example and shouldn't be taken seriously, as they are just to show the function of the feature. After viewing the strength reference, users have the option to get another strength reference, use the BMI Calculator, or exit.
+When the user selects the Strength Guide, they are prompted to enter their gender, bodyweight, and choose an exercise (bench, squat, or deadlift). Input validation is implemented for gender, weight, and exercise selection. The app provides average strength references tailored to the users gender, weight, and chosen exercise. The strength references are just an example and shouldn't be taken seriously, as they are just to show the function of the feature. After viewing the strength reference, users have the option to get another strength reference, use the BMI Calculator, or exit. <br>
 ![Strength Guide](assets/strength-guide.PNG)
 
 ## BMI Calculator
@@ -97,7 +97,7 @@ When the user selects the BMI Calculator, they are prompted to enter their bodyw
 
 ## Looping Functionality
 
-The program is designed to loop, allowing users to make multiple calculations, get multiple strength references or to switch between the Strength Guide and the BMI Calculator without having to restart the app. 
+The program is designed to loop, allowing users to make multiple calculations, get multiple strength references or to switch between the Strength Guide and the BMI Calculator without having to restart the app. <br>
 ![Looping](assets/looping.PNG)
 
 ## Reusability
@@ -128,7 +128,8 @@ Future implementations for this app are.
 
 # Wireframe
 
-- Flowchart Wireframe
+- A flowchart was created before programming started to plan the intended programme flow, as per the attached flowchart.
+
 ![Flowchart wireframe](assets/readme-imgs/flowchart-wireframe.PNG)
 
 # Testing
@@ -142,70 +143,45 @@ The validation results are displayed with a snippet of the code to indicate thei
 
 ### Features Testing
 
-#### Header/Navigation
+#### Welcome screen
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
 | Header     | Click on Header Title | Open Home page   | PASS         |
 
-#### Insctructions modal
+#### Feature selection
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
 | Instructions modal| Close the modal | Game and score start running   | PASS         |
 
-#### Score counter
+#### Strength guide
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
 | Score counter| Run game | Count up score  | PASS              |   
 
-#### Collision detection
+#### BMI Calculator
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
 | Collision detection | Collide with obstacle | Game and score stop  | PASS         |
 
-#### Game over SweetAlert
+#### Looping functionality
 
 | Test Label | Test Action           | Expected Outcome | Test Outcome |
 | ---------- | --------------------- | ---------------- | ------------ |
 | Game over  | Collide with obstacle | Game over SweetAlert displays   | PASS         |
 
-#### Sound effects
-
-| Test Label | Test Action           | Expected Outcome | Test Outcome |
-| ---------- | --------------------- | ---------------- | ------------ |
-| Sound effects  | Jump/ Collide | Sound for jump/collision plays   | PASS         |
-
-### Device Testing
-
-Functionality, layout, and responsiveness were tested on the following devices and screens with issues in the collision detection:
-This game was optimized for 1920px x 1080px screens.
-
-- Lenovo Monitor 2560px x 1440px
-- Samsung Monitor 1920px x 1080px
-- Samsung Galaxy S9 1440px x 2960px
-- iPhone 11 1792px x 828px
-
-### Browser Compatibility
-
-Testing has been carried out on the following browsers:
-- Chrome Version 118.0.5993.117/118
-- Safari Version 17.1
-- Edge Version 118.0.2088.76
-- Firefox Version 119.0
-
 ## Fixed Bugs
 
-* Bug:
+* Bug: The input delivers an error message when required input was typed with a whitespace infront or after.
 
 * Tried solutions:
-1. 
-2. 
-3. 
+1. Used .split() method.
+2. Used if statement which doesn't allow whitespaces.
 
-* Working solution:
+* Working/best solution: Add ".strip()" method to the input functions.
 
 # Deployment
 
@@ -250,17 +226,15 @@ Cloning allows you to make an exact copy of a code repository, usually for colla
 
 ## Code
 
-- The code for the "DOMContentLoaded" eventlistener was learned from the walkthrough project [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/)
-
 - The markdown tables were generated with the help of [Tabletomarkdown](<https://tabletomarkdown.com/convert-spreadsheet-to-markdown>)
 
-- Code for the game idea in general were from [KnifeCircus](https://www.youtube.com/watch?v=bG2BmmYr9NQ)
+- Inspiration for the app idea is from [Strengthlevel](https://strengthlevel.com/strength-standards/bench-press)
 
-- Some of the code for the obstacle movement was learned from [java2s](http://www.java2s.com/ref/javascript/javascript-setinterval-move-element.html)
+- The general structure of an if statement inside a while loop was learned from [Tech with Tim](https://www.youtube.com/watch?v=21FnnGKSRZo)
 
-- The code for the instructions modal was learned from [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+- The .strip() method was taught to me by my mentor Brian Macharia.
 
-- The code for the SweetAlert was adapted from [ChatGPT](https://chat.openai.com/)
+- The code for the  if __name__ == '__main__': ... code block was learned from "mCoding" on YouTube. [mCoding](https://www.youtube.com/watch?v=g_wlZ9IhbTs)
 
 # Acknowledgments
 
