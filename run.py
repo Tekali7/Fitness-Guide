@@ -49,7 +49,7 @@ def strength_guide():
         exercise_mapping = get_exercise_mapping(gender, weight)
 
         print(f"\nAverage strength reference for "
-              "a {gender} lifter with {weight}kg bodyweight:")
+              f"a {gender} lifter with {weight}kg bodyweight:")
 
         if weight >= 50 and weight <= 80:
             print(f"{exercise_mapping[exercise]} kg for {exercise}.\n")
